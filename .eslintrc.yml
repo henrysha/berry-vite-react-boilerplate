@@ -46,6 +46,14 @@ rules:
           group: 'external'
           position: 'before'
       newlines-between: 'always'
+  lines-between-class-members:
+    - error
+    - always
+settings:
+  import/parsers:
+    '@typescript-eslint/parser':
+      - '.ts'
+      - '.tsx'
   import/resolver:
     typescript: {}
     node:
@@ -54,6 +62,3 @@ rules:
         - '.jsx'
         - '.ts'
         - '.tsx'
-  lines-between-class-members:
-    - error
-    - always
