@@ -16,6 +16,8 @@ parserOptions:
     jsx: true
   ecmaVersion: latest
   sourceType: module
+  project: './tsconfig.json'
+  tsconfigRootDir: './'
 plugins:
   - react
   - '@typescript-eslint'
@@ -44,6 +46,14 @@ rules:
           group: 'external'
           position: 'before'
       newlines-between: 'always'
+  import/resolver:
+    typescript: {}
+    node:
+      extensions:
+        - '.js'
+        - '.jsx'
+        - '.ts'
+        - '.tsx'
   lines-between-class-members:
     - error
     - always
