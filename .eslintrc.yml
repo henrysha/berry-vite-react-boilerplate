@@ -38,8 +38,8 @@ rules:
     - error
     - groups:
         - ['builtin', 'external']
-        - ['parent', 'sibling']
         - internal
+        - ['parent', 'sibling']
         - index
       pathGroups:
         - pattern: 'react'
